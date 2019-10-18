@@ -69,13 +69,13 @@
   btnStart.addEventListener('click', () => {
     if (Number.isNaN(timerInterval)) {
       timerInterval = setInterval(() => {
-        const time = getSeconds();
-        if (time.seconds === 0) {
+        const seconds = getSeconds();
+        if (seconds === 0) {
           pTimer.textContent = `Time's up!`;
           clearInterval(timerInterval);
           timerInterval = NaN;
         } else {
-          setMinutesAndSeconds(time.seconds - 1);
+          setMinutesAndSeconds(seconds - 1);
         }
       }, 1000);
     }
