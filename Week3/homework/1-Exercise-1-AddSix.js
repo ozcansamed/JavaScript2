@@ -9,7 +9,7 @@ console.log('EXERCISE 1 - Add Six');
 // 3=> It should look a little like this:
 
 function createBase(x) {
-  return function appendClosure(y) {
+  return function addSix(y) {
     return x + y;
   };
 }

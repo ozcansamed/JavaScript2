@@ -43,3 +43,4 @@ const sayFive = number => {
 };
 
 threeFive(10, 15, sayThree, sayFive);
+threeFive(17, 33, sayThree, sayFive);
