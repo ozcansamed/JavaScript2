@@ -20,7 +20,7 @@ const hackYourFutureMembers = [
 const memberAges = hackYourFutureMembers.map(member => member.age);
 console.log(memberAges);
 
-const calculateTotal = function(callback) {
+const calculateAndPrintTotal = function(callback) {
   const totalAge = callback(memberAges);
   console.log(`The collective age of the HYF team is: ${totalAge}`);
   return totalAge;
@@ -28,4 +28,4 @@ const calculateTotal = function(callback) {
 
 const sumAges = ages => ages.reduce((total, age) => total + age, 0);
 
-console.log(calculateTotal(sumAges));
+console.log(calculateAndPrintTotal(sumAges));
